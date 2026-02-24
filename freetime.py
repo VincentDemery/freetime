@@ -92,7 +92,7 @@ def difference_intervals(a, b, margin=0):
         if b1 >= a[1]:     # b ends after a
             return []
         else:
-            return [[b[1], a[1]]]
+            return [[b1, a[1]]]
     elif b1 >= a[1]:   # b ends after a
         return [[a[0], b0]]
     else:
